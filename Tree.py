@@ -16,5 +16,5 @@ def stem(n):
 		print("| |",end="")
 		print("\r")
 
-n = int(input())
+n = int(input("enter a number : "))
 leaf(n)
