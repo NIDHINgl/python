@@ -1,3 +1,5 @@
+from termcolor import colored, cprint
+
 def leaf(n):
 	k = 2 * n - 2
 	for i in range(0,n):
@@ -5,7 +7,7 @@ def leaf(n):
 			print(end=" ")
 		k = k - 1
 		for j in range(0,i+1):
-			print("* ",end="")
+			print(colored("* ","green"),end="")
 		print("\r")
 	stem(n)
 def stem(n):
@@ -13,8 +15,9 @@ def stem(n):
 	for i in range(0,2):
 		for j in range(0,x):
 			print(end=" ")
-		print("| |",end="")
+		print(colored("| |","red"),end="")
 		print("\r")
 
 n = int(input("enter a number : "))
 leaf(n)
+
