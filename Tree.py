@@ -1,4 +1,4 @@
-from termcolor import colored, cprint
+from termcolor import colored
 
 def leaf(n):
 	k = 2 * n - 2
