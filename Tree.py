@@ -1,4 +1,5 @@
 from termcolor import colored
+import math
 
 def leaf(n):
 	k = 2 * n - 2
@@ -11,13 +12,19 @@ def leaf(n):
 		print("\r")
 	stem(n)
 def stem(n):
-	x = 2 * n - 3
-	for i in range(0,2):
-		for j in range(0,x):
+	"""using this formula to
+	get perfect shape"""
+	x = math.ceil(n * (30/100))
+	k = 2 * n - 3
+	for i in range(0,x):
+		for j in range(0,k):
 			print(end=" ")
 		print(colored("| |","red"),end="")
 		print("\r")
 
-n = int(input("enter a number : "))
+try:
+	n = int(input("Enter a number : "))
+except:
+	n = int(input("Please enter a valid number : "))
 leaf(n)
 
