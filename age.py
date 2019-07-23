@@ -7,7 +7,8 @@ def calcCenturyYear(name,age):
 		year = datetime.datetime.now().year
 		difference = 100 - age
 		result = difference + int(year)
-		print("You will turn 100 in "+str(result))
+		output = "You will turn 100 in {}"
+		print(output.format(result))
 
 name = str(input("Hi! What's your name : "))
 try:
