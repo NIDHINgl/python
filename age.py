@@ -10,5 +10,9 @@ def calcCenturyYear(name,age):
 		print("You will turn 100 in "+str(result))
 
 name = str(input("Hi! What's your name : "))
-age = int(input("Hi! "+name.capitalize()+" How old are you : "))
+try:
+	age = int(input("Hi! "+name.capitalize()+" How old are you : "))
+except:
+	age = int(input("Hi! "+name.capitalize()+" Please enter correct age : "))
+
 calcCenturyYear(name,age)
