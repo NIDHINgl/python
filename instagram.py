@@ -9,7 +9,7 @@ password = 'password'
 #support only jpg/jpeg/png images
 image = 'image.jpg'
 
-#Caption is optional
+#Caption is optional. you can use \r and \n in caption
 caption = '#picoftheday#instamood#instapic#likeforlike'
 
 with client(username,password) as user:
